@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: roxctl
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: roxctl
+    app.kubernetes.io/part-of: devfile-sample
+  name: roxctl
+spec:
+  ports:
+  - port: 8080
+    targetPort: 8080
+  selector:
+    app.kubernetes.io/instance: roxctl
+status:
+  loadBalancer: {}
