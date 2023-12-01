@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: roxctl
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads/jhutar-tenant/devfile-sample/roxctl@sha256:12d8b026bc70ff83455410d019ef17b96aec323e49960f14a1ee960d5d0ed494
+        name: container-image
+        resources: {}
+status: {}
