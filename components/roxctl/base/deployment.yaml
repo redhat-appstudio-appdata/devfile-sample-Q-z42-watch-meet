@@ -10,6 +10,7 @@ metadata:
     app.kubernetes.io/part-of: devfile-sample
   name: roxctl
 spec:
+  replicas: 0
   revisionHistoryLimit: 0
   selector:
     matchLabels:
